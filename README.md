@@ -87,3 +87,44 @@ Lengkapi kode program untuk menu lainnya yang ada pada Controller Page, sehingga
 
 <img width="759" alt="image" src="https://user-images.githubusercontent.com/101643559/172417979-e267b96f-2568-4df6-98ea-ac1b2f9ee068.png">
 <img width="959" alt="image" src="https://user-images.githubusercontent.com/101643559/172418627-5d6c6a3b-2d1c-49cd-a25e-1caf7327b244.png">
+
+
+#Praktikum 12: Framework Lanjutan (CRUD)
+Langkah-langkah Praktikum
+
+Persiapan
+
+Untuk memulai membuat aplikasi CRUD sederhana, yang perlu disiapkan adalah database server menggunakan MySQL. Pastikan MySQL Server sudah dapat dijalankan melalui XAMPP seperti berikut.
+
+<img width="502" alt="image" src="https://user-images.githubusercontent.com/101643559/173361187-cb7822a4-a1e8-44ab-9ca8-f52f4eb39e3e.png">
+
+- Langkah 1
+Membuat database kemudian membuat Tabel dan masukkan kode pada database query seperti berikut.
+
+<img width="737" alt="image" src="https://user-images.githubusercontent.com/101643559/173361669-2a6a0934-3068-4f58-80b3-28f83d0f558e.png">
+
+- Langkah 2 Konfigurasi koneksi database
+
+Selanjutnya membuat konfigurasi untuk menghubungkan dengan database server. Kemudian melakukan konfigurasi dengan cara mengubah beberapa kode pada file htdocs\lab11_php_ci\ci4\.env. Lalu cari pada line DATABASE dan hilangkan tanda pagar (#) didepan seperti berikut ini.
+
+<img width="593" alt="image" src="https://user-images.githubusercontent.com/101643559/173362822-11be4668-9f9f-4d1c-a6f4-8d4a4da8cbfa.png">
+
+- Langkah 3 Membuat Model
+
+Selanjutnya adalah membuat Model untuk memproses data Artikel. Buat file baru pada direktori app/Models dengan nama ArtikelModel.php lalu masukkan kode seperti berikut.
+
+<img width="575" alt="image" src="https://user-images.githubusercontent.com/101643559/173363792-edabc54b-14c1-43f6-bc2b-82d31c42d90e.png">
+
+- Langkah 4 Membuat Controller
+
+Buat Controller baru dengan nama Artikel.php pada direktori app/Controllers lalu masukkan kode seperti berikut
+
+<img width="525" alt="image" src="https://user-images.githubusercontent.com/101643559/173364325-aa619926-fdf4-4bd1-9fcb-4e0263e5351b.png">
+
+- Langkah 5 Membuat View
+
+Buat direktori baru dengan nama artikel pada direktori app/views, kemudian buat file baru dengan nama index.php.
+
+<img width="670" alt="image" src="https://user-images.githubusercontent.com/101643559/173365172-2d38f144-2b8d-4ba1-97cf-1b7ccea52f75.png">
+
+Selanjutnya buka browser kembali, dengan mengakses url http://localhost:8080/artikel maka hasilnya akan seperti berikut.

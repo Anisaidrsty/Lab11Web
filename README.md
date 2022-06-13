@@ -128,3 +128,65 @@ Buat direktori baru dengan nama artikel pada direktori app/views, kemudian buat 
 <img width="670" alt="image" src="https://user-images.githubusercontent.com/101643559/173365172-2d38f144-2b8d-4ba1-97cf-1b7ccea52f75.png">
 
 Selanjutnya buka browser kembali, dengan mengakses url http://localhost:8080/artikel maka hasilnya akan seperti berikut.
+
+<img width="444" alt="image" src="https://user-images.githubusercontent.com/101643559/173366906-791adc5c-7bf1-42e7-8a6a-6c1a242e2bf4.png">
+
+Terlihat belum ada data yang diampilkan. Kemudian coba tambahkan beberapa data pada database query agar dapat ditampilkan datanya seperti berikut.
+
+<img width="923" alt="image" src="https://user-images.githubusercontent.com/101643559/173366992-168bae97-fe2f-4b4a-8f13-1e38c7e7e754.png">
+
+Lalu refresh kembali browser, sehingga akan ditampilkan hasilnya seperti berikut.
+
+<img width="436" alt="image" src="https://user-images.githubusercontent.com/101643559/173367162-ff40d4dd-9092-44ea-abab-ba01d0e099ad.png">
+
+Langkah 6 Membuat Tampilan Detail Artikel
+
+Tampilan pada saat judul berita di klik maka akan diarahkan ke halaman yang berbeda. Tambahkan fungsi baru pada Controller Artikel dengan nama view().
+
+<img width="484" alt="image" src="https://user-images.githubusercontent.com/101643559/173368174-e572b2ab-f2b9-4572-8343-57e3d1fc0fcb.png">
+
+- Langkah 7 Membuat View Detail
+
+Buat view baru untuk halaman detail dengan nama app/views/artikel/detail.php seperti berikut.
+
+<img width="631" alt="image" src="https://user-images.githubusercontent.com/101643559/173369021-09562b87-c3cf-46b8-abaa-eb902cb47bb8.png">
+
+- Langkah 8 Membuat Routing untuk artikel detail
+
+Buka kembali file app/config/Routes.php, kemudian tambahkan routing untuk artikel detail maka hasilnya akan seperti berikut.
+
+<img width="452" alt="image" src="https://user-images.githubusercontent.com/101643559/173369505-2cfdf5e1-ee71-4f6a-a189-0668ac4082c7.png">
+
+- Langkah 9 Membuat Menu Admin
+
+Menu admin adalah untuk proses CRUD data artikel. Buat method baru pada Controller Artikel dengan nama admin_index() seperti berikut.
+
+<img width="514" alt="image" src="https://user-images.githubusercontent.com/101643559/173370114-9d75ae80-d90f-4ae0-a018-d6c6bcf3ea54.png">
+
+Selanjutnya buat view untuk tampilan admin dengan nama admin_index.php seperti berikut.
+
+<img width="908" alt="image" src="https://user-images.githubusercontent.com/101643559/173371389-9a264080-6561-442e-aebb-1e594ec0cdf8.png">
+
+Setelah itu tambahkan routing untuk menu admin seperti berikut.
+
+<img width="577" alt="image" src="https://user-images.githubusercontent.com/101643559/173372405-ed0571b6-37a8-4504-b45d-c63411d4a4f3.png">
+
+Kemudian akses menu admin dengan url http://localhost:8080/admin/artikel seperti berikut.
+<img width="495" alt="image" src="https://user-images.githubusercontent.com/101643559/173372462-3546f870-7478-4b1a-9ea3-469d4c1a8628.png">
+
+Langkah 10 Menambah Data Artikel
+
+Tambahkan fungsi/method baru pada Controller Artikel dengan nama add() seperti berikut.
+
+<img width="575" alt="image" src="https://user-images.githubusercontent.com/101643559/173373305-17223226-04ba-4b67-8de6-6f594383979c.png">
+
+Kemudian buat view untuk form tambah dengan nama form_add.php seperti berikut.
+
+<img width="688" alt="image" src="https://user-images.githubusercontent.com/101643559/173373781-e65b4277-42f0-4192-926b-00753204e20e.png">\
+
+<img width="495" alt="image" src="https://user-images.githubusercontent.com/101643559/173374323-0395a83c-03c9-4b0f-a3f6-8fc49ecf06a4.png">
+
+- Langkah 11 Mengubah Data
+
+Tambahkan fungsi/method baru pada Controller Artikel dengan nama edit().
+

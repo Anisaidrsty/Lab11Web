@@ -190,3 +190,17 @@ Kemudian buat view untuk form tambah dengan nama form_add.php seperti berikut.
 
 Tambahkan fungsi/method baru pada Controller Artikel dengan nama edit().
 
+<img width="487" alt="image" src="https://user-images.githubusercontent.com/101643559/174069873-c472d875-0be9-410e-9f27-874630370cee.png">
+
+Kemudian buat view untuk form tambah dengan nama form_edit.php
+<img width="479" alt="image" src="https://user-images.githubusercontent.com/101643559/174070287-e111f3e8-3573-47f5-acb8-d2a08f81c593.png">
+
+Setelah itu, lalu klik Ubah pada salah satu judul artikel, maka hasilnya akan seperti berikut.
+
+<img width="459" alt="image" src="https://user-images.githubusercontent.com/101643559/174070348-843493f5-47a4-4a01-ad5e-645a35b0740f.png">
+
+- Langkah 12 Menghapus Data
+Tambahkan fungsi/method baru pada Controller Artikel dengan nama delete() seperti berikut.
+
+<img width="522" alt="image" src="https://user-images.githubusercontent.com/101643559/174070664-7c5a4e82-3221-46f3-ab9a-f9f3c90b9b73.png">
+

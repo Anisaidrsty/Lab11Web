@@ -204,3 +204,81 @@ Tambahkan fungsi/method baru pada Controller Artikel dengan nama delete() sepert
 
 <img width="522" alt="image" src="https://user-images.githubusercontent.com/101643559/174070664-7c5a4e82-3221-46f3-ab9a-f9f3c90b9b73.png">
 
+#Praktikum 13: Framework Lanjutan (Modul Login)
+
+- Langkah 1 Membuat Tabel User
+
+Membuat tabel user pada database lab_ci4 seperti berikut.
+
+<img width="946" alt="image" src="https://user-images.githubusercontent.com/101643559/174482305-99e3b222-2c7f-4334-a906-de72ce0baa2c.png">
+
+- Langkah 2 Membuat Model User
+
+
+Selanjutnya adalah membuat Model untuk memproses data Login. Buat file baru pada direktori app/Models dengan nama UserModel.php dan masukkan kode seperti berikut. 
+<img width="563" alt="image" src="https://user-images.githubusercontent.com/101643559/174482673-9d596103-bdc8-46f1-b801-313ae4218f19.png">
+
+
+- Langkah 3 Membuat Controller User
+
+Buat Controller baru dengan nama User.php pada direktori app/Controllers. Kemudian tambahkan method index() untuk menampilkan daftar user, dan method login() untuk proses login dan masukkan kode seperti berikut.
+
+<img width="553" alt="image" src="https://user-images.githubusercontent.com/101643559/174482690-2a036df3-6e4b-46f5-ba21-33be42d4cf0a.png">
+<img width="598" alt="image" src="https://user-images.githubusercontent.com/101643559/174482696-40be5940-ae53-40ae-88f7-f71efa047ec6.png">
+
+- Langkah 4 Membuat View Login
+
+Buat folder baru dengan nama user pada direktori app/views, kemudian buat file baru dengan nama login.php dan masukkan kode seperti berikut.
+
+<img width="823" alt="image" src="https://user-images.githubusercontent.com/101643559/174482945-f0c1a634-5d3a-4b15-ad22-83b002962a0e.png">
+
+- Langkah 5 Membuat Database Seeder
+
+Database seeder digunakan untuk membuat data dummy. Untuk keperluan ujicoba modul login, kita perlu memasukkan data user dan password kedalam database. Untuk itu buat database seeder untuk tabel user. Buka CLI, kemudian ketik perintah berikut:
+
+<img width="677" alt="image" src="https://user-images.githubusercontent.com/101643559/174483011-0a5868bf-a0cc-48ce-a863-4a0d0476d935.png">
+
+Selanjutnya, buka file UserSeeder.php yang berada di lokasi direktori /app/Database/Seeds/UserSeeder.php kemudian isi dengan kode berikut:
+
+<img width="781" alt="image" src="https://user-images.githubusercontent.com/101643559/174483212-d6a893bb-9d17-4467-9014-373919b78ac2.png">
+
+
+Selanjutnya buka kembali CLI dan ketik perintah berikut:
+
+<img width="704" alt="image" src="https://user-images.githubusercontent.com/101643559/174483234-610acc98-21b7-4c6e-b5f2-02d44a94c03e.png">
+
+Selanjutnya buka url http://localhost:8080/user/login seperti berikut:
+
+<img width="953" alt="image" src="https://user-images.githubusercontent.com/101643559/174483366-2419af69-9e8b-43d8-95bc-40124c9c027a.png">
+
+- Langkah 6 Menambahkan Auth Filter
+
+Selanjutnya membuat filter untuk halaman admin. Buat file baru dengan nama Auth.php pada direktori app/Filters dan masukkan kode seperti berikut.
+
+<img width="647" alt="image" src="https://user-images.githubusercontent.com/101643559/174483572-7b0e09b6-f115-4b5e-b24f-eb01d9b89dbf.png">
+
+
+Selanjutnya buka file app/Config/Filters.php tambahkan kode berikut:
+
+<img width="414" alt="image" src="https://user-images.githubusercontent.com/101643559/174483706-0b8c6bf4-75e4-40c4-a274-e24f16840fa4.png">
+
+
+Selanjutnya buka file app/Config/Routes.php dan sesuaikan kodenya seperti berikut.
+
+<img width="522" alt="image" src="https://user-images.githubusercontent.com/101643559/174483860-96b81e05-80fd-4820-84ba-41593a58e38c.png">
+
+- Langkah 7 Fungsi Logout
+
+Tambahkan method logout pada Controller User dan masukkan kode seperti berikut:
+
+<img width="466" alt="image" src="https://user-images.githubusercontent.com/101643559/174483935-ed850e5c-13b8-4045-8da2-608c845e1191.png">
+
+- Langkah 8 Tombol Logout
+
+Menambahkan tombol Logout pada menu header admin dengan cara ke direktori app\view\template lalu buka file admin_header.php dan masukkan kode seperti berikut.
+<img width="570" alt="image" src="https://user-images.githubusercontent.com/101643559/174484048-c175b26d-8945-44f3-bddd-d7deb5b8a5df.png">
+
+
+
+
+
